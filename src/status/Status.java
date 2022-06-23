@@ -17,17 +17,16 @@ import java.util.Scanner;
  * @author srinivsi 
  */
 public class Status {
-
-    /**
-     * @param args the command line arguments
-     */
+    
+    public enum code{ZERO,ONE,TWO,THREE,FOUR;}
+    
     public static void main(String[] args)
     {
-    Scanner in =new Scanner(System.in);
-    System.out.println("Enter the user status code (zero,one,two,three) in string");
-    String code = in.next();
-    StausUser t= new StausUser();
-    t.statusDetail(code); 
+       System.out.println(code.ZERO + " : REJECTED");
+       System.out.println(code.ONE + " : PENDING");
+       System.out.println(code.TWO + " : PROCESSING");
+       System.out.println(code.THREE + " : APPROVED");
+       
     }
     
 }
